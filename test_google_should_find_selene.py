@@ -1,6 +1,6 @@
 import pytest
 from selene import browser, be, have, by
-#проект QA.GURU commit 2
+#проект QA.GURU commit 3
 @pytest.fixture()
 def configuratio():
     browser.config.window_height = 1920
