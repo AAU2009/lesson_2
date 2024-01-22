@@ -1,11 +1,7 @@
-import pytest
 from selene import browser, be, have, by
-#проект QA.GURU commit 3
-@pytest.fixture()
-def configuratio():
-    browser.config.window_height = 1920
-    browser.config.window_width = 1080
-    browser.config.timeout = 10
+
+
+# проект QA.GURU commit лекция 2 фикстуры
 
 
 def test_selene_can_be_found():
@@ -26,4 +22,3 @@ def test_selene_can_not_be_found():
     browser.element('[name="q"]').should(be.blank).type('safsafsafafasfsafsafsafsafsafsafsafsaf').press_enter()
 
     browser.element('[id="result-stats"]').should(have.text('About 0 results'))
-
